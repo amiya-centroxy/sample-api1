@@ -11,3 +11,7 @@
 
 `python run.py`<br>
 
+#### 3. Check API
+
+`Hit localhost:5000 on Browser`<br>
+
