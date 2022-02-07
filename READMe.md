@@ -9,5 +9,5 @@
 
 #### 3. Run Application
 
-`flask run`<br>
+`python run.py`<br>
 
