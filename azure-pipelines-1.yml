@@ -27,17 +27,17 @@ steps:
       workingDirectory: $(projectRoot)
        displayName:"Install requirements"
 
-- task: ArchiveFiles@2
-   inputs:
-     rootFolderOrFile: '$(Build.SourcesDirectory)'
+-task: ArchiveFiles@2
+ inputs:
+  rootFolderOrFile: '$(Build.SourcesDirectory)'
      includeRootFolder: false
      archiveType: 'zip'
      archiveFile: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
      replaceExistingArchive: true
      verbose: # (no value); this input is optional
 - publish: $(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip
-   displayName: 'Upload package'
-   artifact: drop
+    displayName: 'Upload package'
+    artifact: drop
 jobs:
 - deployment: DeploymentJob
 pool:
