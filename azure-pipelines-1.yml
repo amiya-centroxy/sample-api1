@@ -14,7 +14,6 @@ strategy:
       python.version: '3.7'
 
 steps:
-steps:
     - task: UsePythonVersion@3.7
       inputs:
          versionSpec: '$(pythonVersion)'
